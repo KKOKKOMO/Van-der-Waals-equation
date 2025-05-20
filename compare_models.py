@@ -79,7 +79,7 @@ def compare_models_T(
             sweep_res['P_error (%)'],
             xlabel='T, K',
             ylabel='P, Pa',
-            suptitle_title = f'{name}\nCurr N = {N}, Curr L = {L}m^3',
+            suptitle_title = f'{name}\nN = {N}, L = {L} m^3',
             errlabel='ΔP, Pa',
             title=f'Isothermal process'
         )
@@ -154,7 +154,7 @@ def compare_models_N(
             err=sweep_res['P_error (%)'],
             xlabel='N, particles',
             ylabel='P, Pa',
-            suptitle_title = f'{name}\nCurr T = {T}K, Curr L = {L}m^3',
+            suptitle_title = f'{name}\nT = {T} K, L = {L} m^3',
             errlabel='ΔP, %',
             title=f'(P vs N at T=const, L=const)'
         )
@@ -224,7 +224,7 @@ def compare_models_V(
             err=sweep_res['P_error (%)'],
             xlabel='L, m',
             ylabel='P, Pa',
-            suptitle_title = f'{name}\nCurr T = {T}K, Curr N = {N}',
+            suptitle_title = f'{name}\nT = {T} K, N = {N}',
             errlabel='ΔP, %',
             title=f'Isochoric process'
         )
